@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.express as px
 
 st.title('เกษียณแล้วปลอดภัยวางใจมิจฉาชีพ ❗❓')
@@ -39,7 +37,7 @@ st.text('_______________________________________________________________________
 def plot_pie_gander():
     st.subheader('โดยพบอาชญากรรมออนไลน์เกิดกับเพศหญิงถึง 60 %🏳️‍🌈')
     fig = px.pie(criminal['เพศ'], names='เพศ',color='เพศ',
-                 width=800, height=600,
+                 width=800, height=800,
                  color_discrete_map={"หญิง": 'pink'})
     st.write(fig)
 
